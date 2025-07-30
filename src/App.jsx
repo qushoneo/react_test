@@ -10,7 +10,7 @@ function App() {
     `https://jsonplaceholder.typicode.com/posts?_limit=25&_page=${page}`
   );
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className='loading'>Loading...</div>;
 
   return (
     <>
