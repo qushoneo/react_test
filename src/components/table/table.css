@@ -1,0 +1,37 @@
+.table__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.table__row {
+  position: relative;
+
+  border-bottom: 1px solid white;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #333;
+  }
+}
+
+.table__row--highlighted {
+  background-color: white;
+  color: black;
+}
+
+.table__cell {
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  min-height: 70%;
+}
+
+.mobile-hidden {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
